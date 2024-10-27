@@ -1,0 +1,27 @@
+================================================================================
+Incomplete class member declaration
+================================================================================
+
+class Foo {
+  std::
+private:
+  std::string s;
+};
+
+--------------------------------------------------------------------------------
+
+(translation_unit
+  (class_specifier
+    (type_identifier)
+    (field_declaration_list
+      (field_declaration
+        (qualified_identifier
+          (namespace_identifier)
+          (type_identifier))
+        (MISSING field_identifier)
+        (bitfield_clause
+          (qualified_identifier
+            (namespace_identifier)
+            (identifier)))
+        (ERROR
+          (identifier))))))
